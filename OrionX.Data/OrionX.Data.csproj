@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data.cs" />
-    <Compile Include="Linq\XML\XMLReader.cs" />
+    <Compile Include="Linq\XML\Load\Loader.cs" />
+    <Compile Include="Linq\XML\XML.cs" />
+    <Compile Include="Linq\XML\Read\Reader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

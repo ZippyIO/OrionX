@@ -41,6 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Content.cs" />
+    <Compile Include="Game\ContentType.cs" />
+    <Compile Include="Game\File\FileType.cs" />
+    <Compile Include="Game\File\FileTypes.cs" />
+    <Compile Include="Game\SpriteContent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

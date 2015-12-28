@@ -1,0 +1,5 @@
+c:\users\nick\documents\visual studio 2015\Projects\OrionX\OrionX\bin\Debug\OrionX.dll
+c:\users\nick\documents\visual studio 2015\Projects\OrionX\OrionX\bin\Debug\OrionX.pdb
+c:\users\nick\documents\visual studio 2015\Projects\OrionX\OrionX\obj\Debug\OrionX.csprojResolveAssemblyReference.cache
+c:\users\nick\documents\visual studio 2015\Projects\OrionX\OrionX\obj\Debug\OrionX.dll
+c:\users\nick\documents\visual studio 2015\Projects\OrionX\OrionX\obj\Debug\OrionX.pdb

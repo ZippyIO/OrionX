@@ -5,25 +5,18 @@
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
-// * File: Program.cs
+// * File: Library.cs
 // * Date: 28/12/2015
-// * Time: 3:48 PM
+// * Time: 4:09 PM
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace OrionX.Tests
+namespace OrionX.Library
 {
-    class Program
+    public class Library
     {
-        static void Main(string[] args)
-        {
-            Person Jon = new Person("Jon");
-
-            Console.WriteLine(Jon.Name);
-            Console.ReadKey();
-        }
     }
 }

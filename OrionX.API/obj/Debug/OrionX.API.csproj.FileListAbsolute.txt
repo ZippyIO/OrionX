@@ -1,0 +1,4 @@
+c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.API\bin\Debug\OrionX.API.dll
+c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.API\bin\Debug\OrionX.API.pdb
+c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.API\obj\Debug\OrionX.API.dll
+c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.API\obj\Debug\OrionX.API.pdb

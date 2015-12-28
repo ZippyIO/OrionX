@@ -1,0 +1,5 @@
+c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Input\bin\Debug\OrionX.Input.dll
+c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Input\bin\Debug\OrionX.Input.pdb
+c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Input\obj\Debug\OrionX.Input.csprojResolveAssemblyReference.cache
+c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Input\obj\Debug\OrionX.Input.dll
+c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Input\obj\Debug\OrionX.Input.pdb

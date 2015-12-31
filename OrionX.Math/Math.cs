@@ -13,17 +13,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using OrionX.Math.Time;
 
 namespace OrionX.Math
 {
     public class Math
     {
-        public DeltaTime Time;
-
-        public void Initalize()
-        {
-            Time = new DeltaTime();
-        }
     }
 }

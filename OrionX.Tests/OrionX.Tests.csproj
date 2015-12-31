@@ -1,117 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{59E37DC4-A963-4B05-B14B-2E23CB0069AD}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55CD97C2-B4AC-4715-B376-DAAFA6A0D993}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OrionX.Tests</RootNamespace>
     <AssemblyName>OrionX.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <MonoGamePlatform>Windows</MonoGamePlatform>
-    <MonoGameContentBuilderExe>
-    </MonoGameContentBuilderExe>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile />
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Windows\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Windows\Release\</OutputPath>
-    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Game1.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="MonoGame.Framework">
-      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Icon.ico" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <MonoGameContentReference Include="Content\Content.mgcb" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OrionX.API\OrionX.API.csproj">
-      <Project>{44cd383a-1cb9-420f-9c03-613dac1ce1d4}</Project>
-      <Name>OrionX.API</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrionX.Audio\OrionX.Audio.csproj">
-      <Project>{954e2197-39cd-475f-bbef-96e135f9dccf}</Project>
-      <Name>OrionX.Audio</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrionX.Content\OrionX.Content.csproj">
-      <Project>{7dd65d11-fa4f-4e1f-8835-cbadced432d2}</Project>
-      <Name>OrionX.Content</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrionX.Data\OrionX.Data.csproj">
-      <Project>{4ca65224-8020-4a9d-ba3a-786760ae9aa9}</Project>
-      <Name>OrionX.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrionX.Game\OrionX.Game.csproj">
-      <Project>{497b3eb8-dcbb-41a6-ba9c-4a78b58e666a}</Project>
-      <Name>OrionX.Game</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrionX.Input\OrionX.Input.csproj">
-      <Project>{a4d70d3c-03dd-4645-a190-a009e70408f4}</Project>
-      <Name>OrionX.Input</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrionX.Library\OrionX.Library.csproj">
-      <Project>{eba2c78c-daa8-4b72-bd1f-bc609c059400}</Project>
-      <Name>OrionX.Library</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrionX.Math\OrionX.Math.csproj">
-      <Project>{bd7400f1-de49-4ef6-ae85-48985c5b1e13}</Project>
-      <Name>OrionX.Math</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrionX.Network\OrionX.Network.csproj">
-      <Project>{a94d7507-276f-4ab4-9467-41f4f940790f}</Project>
-      <Name>OrionX.Network</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrionX.Physics\OrionX.Physics.csproj">
-      <Project>{e7a9765c-5a7e-486f-9671-63b3941e2f03}</Project>
-      <Name>OrionX.Physics</Name>
-    </ProjectReference>
     <ProjectReference Include="..\OrionX\OrionX.csproj">
       <Project>{3dfd48f8-21f7-47c8-9e8a-25ff206341ef}</Project>
       <Name>OrionX</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

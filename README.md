@@ -8,16 +8,16 @@ This project is currently being developed solely by myself, if you'd like to con
 If you have any ideas or issues please submit them via a GitHub issue or contact me via the contact details below.
 
 ### Engine Components
-- Game Engine
-- Physics Engine
-- Unit Engine
-- Audio Engine
-- Map Engine
-- Input Engine
-- Component Engine
-- Content Engine
-- Linq Engine
 - API Engine
+- Audio Engine
+- Content Engine
+- Data Engine
+- Game Engine
+- Input Engine
+- Library Engine
+- Math Engine
+- Network Engine
+- Physics Engine
 
 ### Projects Used
 List of 3rd party projects and libraries used in OrionX.

@@ -18,5 +18,6 @@ namespace OrionX.Data
 {
     public class Data
     {
+
     }
 }

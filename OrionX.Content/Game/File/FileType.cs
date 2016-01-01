@@ -13,10 +13,8 @@ using System;
 
 namespace OrionX.Content.Game.File
 {
-
     public sealed class FileType
     {
-
         /// <summary>
         /// Is the FileType defined allowed
         /// </summary>
@@ -28,6 +26,11 @@ namespace OrionX.Content.Game.File
         /// </summary>
         public FileTypes FileTypes { get; set; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FileType"/> class.
+        /// </summary>
+        /// <param name="fileType">Type of the file.</param>
+        /// <param name="isAllowed">if set to <c>true</c> [is allowed].</param>
         public FileType(FileTypes fileType, bool isAllowed)
         {
             fileType = FileTypes;

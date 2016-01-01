@@ -12,7 +12,6 @@ namespace OrionX.Content.Game
 {
     public class SpriteContent
     {
-
         /// <summary>
         /// Contents the location.
         /// </summary>

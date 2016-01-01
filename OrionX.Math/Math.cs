@@ -19,11 +19,25 @@ namespace OrionX.Math
 {
     public class Math
     {
+        #region Fields Region
+
+        /// <summary>
+        /// DeltaTime
+        /// </summary>
         public DeltaTime Time;
 
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Initalizes this instance.
+        /// </summary>
         public void Initalize()
         {
             Time = new DeltaTime();
         }
+
+        #endregion
     }
 }

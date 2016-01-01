@@ -32,6 +32,9 @@ namespace OrionX.Data.Linq.XML
 
         #region Methods
 
+        /// <summary>
+        /// Initializes this instance.
+        /// </summary>
         public void Initialize()
         {
             Reader = new Reader();

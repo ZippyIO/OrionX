@@ -17,7 +17,18 @@ namespace OrionX.Game.Util
     {
         #region Variables and Properties
 
+
+        /// <summary>
+        /// The GameService container
+        /// </summary>
         private static GameServiceContainer container;
+
+        /// <summary>
+        /// Gets the GameServiceContainer instance.
+        /// </summary>
+        /// <value>
+        /// The instance.
+        /// </value>
         public static GameServiceContainer Instance
         {
             get
@@ -36,6 +47,12 @@ namespace OrionX.Game.Util
 
         //Get the GameService
         //Usage: GameService.GetService<GraphicsDevice>()
+
+        /// <summary>
+        /// Gets the service.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         public static T GetService<T>()
         {
             return (T)Instance.GetService(typeof(T));
@@ -43,6 +60,12 @@ namespace OrionX.Game.Util
 
         //Adds a GameService
         //Usage: GameService.AddService"<GraphicsDevice>"(GraphicsDevice);
+
+        /// <summary>
+        /// Adds the service.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="service">The service.</param>
         public static void AddService<T>(T service)
         {
             Instance.AddService(typeof(T), service);
@@ -50,6 +73,11 @@ namespace OrionX.Game.Util
 
         //Removes a GameService
         //Usage: GameService.RemoveService<GraphicsDevice>(GraphicsDevice);
+
+        /// <summary>
+        /// Removes the service.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
         public static void RemoveService<T>()
         {
             Instance.RemoveService(typeof(T));

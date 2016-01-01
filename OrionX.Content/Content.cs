@@ -18,5 +18,6 @@ namespace OrionX.Content
 {
     public class Content
     {
+
     }
 }

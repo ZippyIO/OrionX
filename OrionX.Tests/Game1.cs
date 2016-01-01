@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using OrionX.Audio.Sound;
+using OrionX.Input.Keyboard;
 
 namespace OrionX.Tests
 {
@@ -75,13 +79,6 @@ namespace OrionX.Tests
 
             time = Engine.Math.Time.Delta(gameTime);
 
-
-            if (test <= 1)
-            {
-                Console.WriteLine(time.ToString());
-                test++;
-            }
-
             base.Update(gameTime);
         }
 
@@ -92,8 +89,6 @@ namespace OrionX.Tests
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
-
 
             base.Draw(gameTime);
         }

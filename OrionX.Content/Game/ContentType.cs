@@ -145,9 +145,16 @@ namespace OrionX.Content.Game
 
         #endregion
 
+        #region Constructor Region
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ContentType"/> class.
+        /// </summary>
         public ContentType()
         {
 
         }
+
+        #endregion
     }
 }

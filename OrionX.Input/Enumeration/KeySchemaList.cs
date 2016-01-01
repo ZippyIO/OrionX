@@ -10,6 +10,10 @@
 // * Time: 6:38 PM
 namespace OrionX.Input.Enumeration
 {
+
+    /// <summary>
+    /// WASD Key Schema
+    /// </summary>
     public enum SchemaWASD
     {
         W,
@@ -18,6 +22,9 @@ namespace OrionX.Input.Enumeration
         D,
     }
 
+    /// <summary>
+    /// Arrow Key Schema
+    /// </summary>
     public enum SchemaArrow
     {
         Up,
@@ -26,6 +33,9 @@ namespace OrionX.Input.Enumeration
         Right,
     }
 
+    /// <summary>
+    /// List of Key Schemas
+    /// </summary>
     public enum SchemaList
     {
         WASD,

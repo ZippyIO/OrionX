@@ -10,6 +10,10 @@
 // * Time: 5:32 PM
 namespace OrionX.Content.Game.File
 {
+
+    /// <summary>
+    /// List of FileTypes to allow or disallow
+    /// </summary>
     public enum FileTypes
     {
         XNB,

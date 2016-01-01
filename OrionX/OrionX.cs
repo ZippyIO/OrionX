@@ -18,17 +18,65 @@ namespace OrionX
 {
     public class OrionX
     {
+        #region Fields Region
+
+        /// <summary>
+        /// API Class
+        /// </summary>
         public API.API API;
+
+        /// <summary>
+        /// Audio Class
+        /// </summary>
         public Audio.Audio Audio;
+
+        /// <summary>
+        /// Content Class
+        /// </summary>
         public Content.Content Content;
+
+        /// <summary>
+        /// Data Class
+        /// </summary>
         public Data.Data Data;
+
+        /// <summary>
+        /// Game Class
+        /// </summary>
         public Game.Game Game;
+
+        /// <summary>
+        /// Input Class
+        /// </summary>
         public Input.Input Input;
+
+        /// <summary>
+        /// Library Class
+        /// </summary>
         public Library.Library Library;
+
+        /// <summary>
+        /// Maths Class
+        /// </summary>
         public Math.Math Math;
+
+        /// <summary>
+        /// Network Class
+        /// </summary>
         public Network.Network Network;
+
+        /// <summary>
+        /// Physics Class
+        /// </summary>
         public Physics.Physics Physics;
 
+        #endregion
+
+        #region Methods Region
+
+        /// <summary>
+        /// Initalizes this instance.
+        /// </summary>
         public void Initalize()
         {
             API = new API.API();
@@ -44,5 +92,7 @@ namespace OrionX
 
             Math.Initalize();
         }
+
+        #endregion
     }
 }

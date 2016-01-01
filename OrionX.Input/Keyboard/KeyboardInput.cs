@@ -16,10 +16,36 @@ namespace OrionX.Input.Keyboard
 {
     public class KeyboardInput
     {
+        #region Fields Region
+
+        /// <summary>
+        /// The current Keyboard State
+        /// </summary>
         public static KeyboardState State;
+
+        /// <summary>
+        /// The last Keyboard State
+        /// </summary>
         public static KeyboardState LastState;
 
+        #endregion
 
+        #region Constructor Region
+
+        public KeyboardInput()
+        {
+
+        }
+
+        #endregion
+
+        #region Methods Region
+
+        /// <summary>
+        /// Checks to see if the key specified has been released.
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <returns></returns>
         public static bool KeyReleased(Keys key)
         {
             State = Microsoft.Xna.Framework.Input.Keyboard.GetState();
@@ -27,6 +53,11 @@ namespace OrionX.Input.Keyboard
                LastState.IsKeyDown(key);
         }
 
+        /// <summary>
+        /// Checks to see if the key specified has been pressed.
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <returns></returns>
         public static bool KeyPressed(Keys key)
         {
             State = Microsoft.Xna.Framework.Input.Keyboard.GetState();
@@ -34,10 +65,17 @@ namespace OrionX.Input.Keyboard
                    LastState.IsKeyUp(key);
         }
 
+        /// <summary>
+        /// Checks to see if the key specified is down.
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <returns></returns>
         public static bool KeyDown(Keys key)
         {
             State = Microsoft.Xna.Framework.Input.Keyboard.GetState();
             return State.IsKeyDown(key);
         }
+
+        #endregion
     }
 }

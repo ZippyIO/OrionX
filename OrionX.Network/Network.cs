@@ -18,5 +18,6 @@ namespace OrionX.Network
 {
     public class Network
     {
+
     }
 }

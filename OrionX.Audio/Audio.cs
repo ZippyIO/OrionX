@@ -13,10 +13,37 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
+using OrionX.Audio.Sound;
 
 namespace OrionX.Audio
 {
     public class Audio
     {
+        public SoundFX SoundFX;
+        public Music Music;
+
+        public void Initalize()
+        {
+        //    SoundFX = new SoundFX();
+          //  Music = new Music();
+        }
+
+        public void Load(ContentManager Content)
+        {
+            
+        }
+
+        public void Update(GameTime gameTime)
+        {
+            
+        }
+
+        public void Draw(SpriteBatch sb)
+        {
+            
+        }
     }
 }

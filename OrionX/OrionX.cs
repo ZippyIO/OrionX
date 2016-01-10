@@ -16,6 +16,9 @@ using System.Text;
 
 namespace OrionX
 {
+    /// <summary>
+    /// Class OrionX.
+    /// </summary>
     public class OrionX
     {
         #region Fields Region

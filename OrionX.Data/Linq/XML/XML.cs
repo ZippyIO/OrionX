@@ -14,6 +14,9 @@ using OrionX.Data.Linq.XML.Read;
 
 namespace OrionX.Data.Linq.XML
 {
+    /// <summary>
+    /// Class XML.
+    /// </summary>
     public class XML
     {
         #region Fields & Variables

@@ -15,6 +15,9 @@ using OrionX.Data.Linq.XML.Read;
 
 namespace OrionX.Data.Linq.XML.Load
 {
+    /// <summary>
+    /// Class Loader.
+    /// </summary>
     public class Loader
     {
         /// <summary>

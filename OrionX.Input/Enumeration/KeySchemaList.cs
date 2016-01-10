@@ -16,9 +16,21 @@ namespace OrionX.Input.Enumeration
     /// </summary>
     public enum SchemaWASD
     {
+        /// <summary>
+        /// The w
+        /// </summary>
         W,
+        /// <summary>
+        /// The s
+        /// </summary>
         S,
+        /// <summary>
+        /// a
+        /// </summary>
         A,
+        /// <summary>
+        /// The d
+        /// </summary>
         D,
     }
 
@@ -27,9 +39,21 @@ namespace OrionX.Input.Enumeration
     /// </summary>
     public enum SchemaArrow
     {
+        /// <summary>
+        /// Up
+        /// </summary>
         Up,
+        /// <summary>
+        /// Down
+        /// </summary>
         Down,
+        /// <summary>
+        /// The left
+        /// </summary>
         Left,
+        /// <summary>
+        /// The right
+        /// </summary>
         Right,
     }
 
@@ -38,7 +62,13 @@ namespace OrionX.Input.Enumeration
     /// </summary>
     public enum SchemaList
     {
+        /// <summary>
+        /// The wasd
+        /// </summary>
         WASD,
+        /// <summary>
+        /// The arrows
+        /// </summary>
         Arrows,
     }
 }

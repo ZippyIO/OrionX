@@ -14,6 +14,9 @@ using Microsoft.Xna.Framework.Input;
 
 namespace OrionX.Input.GamePad
 {
+    /// <summary>
+    /// Class GamePadInput.
+    /// </summary>
     public class GamePadInput
     {
         #region Fields Region
@@ -32,6 +35,9 @@ namespace OrionX.Input.GamePad
 
         #region Constructor Region
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GamePadInput"/> class.
+        /// </summary>
         public GamePadInput()
         {
 
@@ -46,7 +52,7 @@ namespace OrionX.Input.GamePad
         /// </summary>
         /// <param name="button">The button.</param>
         /// <param name="index">The index.</param>
-        /// <returns></returns>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         public static bool ButtonReleased(Buttons button, PlayerIndex index)
         {
             return GamePadState[(int)index].IsButtonUp(button) &&
@@ -58,9 +64,11 @@ namespace OrionX.Input.GamePad
         /// </summary>
         /// <param name="button">The button.</param>
         /// <param name="index">The index.</param>
-        /// <returns></returns>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         public static bool ButtonPressed(Buttons button, PlayerIndex index)
         {
+            GamePadState = new GamePadState[1];
+            LastGamePadState = new GamePadState[1];
             return GamePadState[(int)index].IsButtonDown(button) &&
                    LastGamePadState[(int)index].IsButtonUp(button);
         }

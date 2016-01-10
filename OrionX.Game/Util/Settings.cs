@@ -10,6 +10,9 @@
 // * Time: 4:34 PM
 namespace OrionX.Game.Util
 {
+    /// <summary>
+    /// Class Settings.
+    /// </summary>
     public class Settings
     {
         #region Audio Settings

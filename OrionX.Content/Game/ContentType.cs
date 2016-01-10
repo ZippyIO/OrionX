@@ -13,6 +13,9 @@ using OrionX.Content.Game.File;
 
 namespace OrionX.Content.Game
 {
+    /// <summary>
+    /// Class ContentType.
+    /// </summary>
     public class ContentType
     {
 
@@ -148,7 +151,7 @@ namespace OrionX.Content.Game
         #region Constructor Region
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ContentType"/> class.
+        /// Initializes a new instance of the <see cref="ContentType" /> class.
         /// </summary>
         public ContentType()
         {

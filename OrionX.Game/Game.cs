@@ -16,6 +16,9 @@ using System.Text;
 
 namespace OrionX.Game
 {
+    /// <summary>
+    /// Class Game.
+    /// </summary>
     public class Game
     {
 

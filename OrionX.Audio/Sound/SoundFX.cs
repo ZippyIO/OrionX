@@ -10,12 +10,15 @@
 // * Time: 2:48 PM
 namespace OrionX.Audio.Sound
 {
+    /// <summary>
+    /// Class SoundFX. This class cannot be inherited.
+    /// </summary>
     public sealed class SoundFX : BaseAudio
     {
         #region Constructor Region
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SoundFX"/> class.
+        /// Initializes a new instance of the <see cref="SoundFX" /> class.
         /// </summary>
         public SoundFX()
         {

@@ -16,6 +16,9 @@ using System.Text;
 
 namespace OrionX.Data
 {
+    /// <summary>
+    /// Class Data.
+    /// </summary>
     public class Data
     {
 

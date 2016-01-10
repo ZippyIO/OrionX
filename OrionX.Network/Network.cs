@@ -16,6 +16,9 @@ using System.Text;
 
 namespace OrionX.Network
 {
+    /// <summary>
+    /// Class Network.
+    /// </summary>
     public class Network
     {
 

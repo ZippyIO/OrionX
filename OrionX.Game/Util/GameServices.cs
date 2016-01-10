@@ -13,6 +13,9 @@ using Microsoft.Xna.Framework;
 
 namespace OrionX.Game.Util
 {
+    /// <summary>
+    /// Class GameServices.
+    /// </summary>
     public class GameServices
     {
         #region Variables and Properties
@@ -26,9 +29,7 @@ namespace OrionX.Game.Util
         /// <summary>
         /// Gets the GameServiceContainer instance.
         /// </summary>
-        /// <value>
-        /// The instance.
-        /// </value>
+        /// <value>The instance.</value>
         public static GameServiceContainer Instance
         {
             get
@@ -52,7 +53,7 @@ namespace OrionX.Game.Util
         /// Gets the service.
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <returns></returns>
+        /// <returns>T.</returns>
         public static T GetService<T>()
         {
             return (T)Instance.GetService(typeof(T));

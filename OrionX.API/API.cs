@@ -16,6 +16,9 @@ using System.Text;
 
 namespace OrionX.API
 {
+    /// <summary>
+    /// Class API.
+    /// </summary>
     public class API
     {
 

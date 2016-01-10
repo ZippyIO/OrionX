@@ -13,6 +13,9 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace OrionX.Audio.Sound
 {
+    /// <summary>
+    /// Class BaseAudio.
+    /// </summary>
     public abstract class BaseAudio
     {
         #region Fields & Variables Region
@@ -20,33 +23,25 @@ namespace OrionX.Audio.Sound
         /// <summary>
         /// Gets or sets the sound effect.
         /// </summary>
-        /// <value>
-        /// The sound effect.
-        /// </value>
+        /// <value>The sound effect.</value>
         public SoundEffect SoundEffect { get; set; }
 
         /// <summary>
         /// Gets or sets the sound effect instance.
         /// </summary>
-        /// <value>
-        /// The sound effect instance.
-        /// </value>
+        /// <value>The sound effect instance.</value>
         public SoundEffectInstance SoundEffectInstance { get; set; }
 
         /// <summary>
         /// Gets or sets the length of the audio file.
         /// </summary>
-        /// <value>
-        /// The length.
-        /// </value>
+        /// <value>The length.</value>
         public float Length { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether this instance is active.
         /// </summary>
-        /// <value>
-        ///   <c>true</c> if this instance is active; otherwise, <c>false</c>.
-        /// </value>
+        /// <value><c>true</c> if this instance is active; otherwise, <c>false</c>.</value>
         public bool IsActive { get; set; }
 
         #endregion

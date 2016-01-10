@@ -16,6 +16,9 @@ using System.Text;
 
 namespace OrionX.Physics
 {
+    /// <summary>
+    /// Class Physics.
+    /// </summary>
     public class Physics
     {
 

@@ -13,13 +13,16 @@ using Microsoft.Xna.Framework;
 
 namespace OrionX.Math.Time
 {
+    /// <summary>
+    /// Class DeltaTime.
+    /// </summary>
     public class DeltaTime
     {
         /// <summary>
         /// Syncs frame based operations with time to avoid speed differences with framerates
         /// </summary>
         /// <param name="gameTime">The game time.</param>
-        /// <returns></returns>
+        /// <returns>System.Single.</returns>
         public float Delta(GameTime gameTime)
         {
             var delta = (float)gameTime.ElapsedGameTime.TotalSeconds;

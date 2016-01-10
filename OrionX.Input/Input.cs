@@ -21,12 +21,27 @@ using OrionX.Input.Keyboard;
 
 namespace OrionX.Input
 {
+    /// <summary>
+    /// Class Input.
+    /// </summary>
     public class Input
     {
+        /// <summary>
+        /// The keyboard
+        /// </summary>
         public KeyboardInput Keyboard;
+        /// <summary>
+        /// The game pad
+        /// </summary>
         public GamePadInput GamePad;
+        /// <summary>
+        /// The schema
+        /// </summary>
         public KeyboardSchema Schema;
 
+        /// <summary>
+        /// Initalizes this instance.
+        /// </summary>
         public void Initalize()
         {
             Keyboard = new KeyboardInput();
@@ -34,17 +49,29 @@ namespace OrionX.Input
             Schema = new KeyboardSchema();
         }
 
+        /// <summary>
+        /// Loads the specified content.
+        /// </summary>
+        /// <param name="Content">The content.</param>
         public void Load(ContentManager Content)
         {
             
         }
 
 
+        /// <summary>
+        /// Updates the specified game time.
+        /// </summary>
+        /// <param name="gameTime">The game time.</param>
         public void Update(GameTime gameTime)
         {
             
         }
 
+        /// <summary>
+        /// Draws the specified sb.
+        /// </summary>
+        /// <param name="sb">The sb.</param>
         public void Draw(SpriteBatch sb)
         {
             

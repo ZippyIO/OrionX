@@ -10,6 +10,9 @@
 // * Time: 5:27 PM
 namespace OrionX.Content.Game
 {
+    /// <summary>
+    /// Class SpriteContent.
+    /// </summary>
     public class SpriteContent
     {
         /// <summary>
@@ -17,7 +20,7 @@ namespace OrionX.Content.Game
         /// </summary>
         /// <param name="location">The location.</param>
         /// <param name="filename">The filename.</param>
-        /// <returns></returns>
+        /// <returns>System.String.</returns>
         public string ContentLocation(string location, string filename)
         {
             var content = location + filename;

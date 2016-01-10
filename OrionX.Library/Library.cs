@@ -16,6 +16,9 @@ using System.Text;
 
 namespace OrionX.Library
 {
+    /// <summary>
+    /// Class Library.
+    /// </summary>
     public class Library
     {
 

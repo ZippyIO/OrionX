@@ -20,27 +20,51 @@ using OrionX.Audio.Sound;
 
 namespace OrionX.Audio
 {
+    /// <summary>
+    /// Class Audio.
+    /// </summary>
     public class Audio
     {
+        /// <summary>
+        /// The sound fx
+        /// </summary>
         public SoundFX SoundFX;
+        /// <summary>
+        /// The music
+        /// </summary>
         public Music Music;
 
+        /// <summary>
+        /// Initalizes this instance.
+        /// </summary>
         public void Initalize()
         {
         //    SoundFX = new SoundFX();
           //  Music = new Music();
         }
 
+        /// <summary>
+        /// Loads the specified content.
+        /// </summary>
+        /// <param name="Content">The content.</param>
         public void Load(ContentManager Content)
         {
             
         }
 
+        /// <summary>
+        /// Updates the specified game time.
+        /// </summary>
+        /// <param name="gameTime">The game time.</param>
         public void Update(GameTime gameTime)
         {
             
         }
 
+        /// <summary>
+        /// Draws the specified sb.
+        /// </summary>
+        /// <param name="sb">The sb.</param>
         public void Draw(SpriteBatch sb)
         {
             

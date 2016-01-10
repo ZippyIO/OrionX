@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using OrionX.Audio.Sound;
+using OrionX.Input.GamePad;
 using OrionX.Input.Keyboard;
 
 namespace OrionX.Tests
@@ -15,17 +16,39 @@ namespace OrionX.Tests
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        /// <summary>
+        /// The graphics
+        /// </summary>
         GraphicsDeviceManager graphics;
+        /// <summary>
+        /// The sprite batch
+        /// </summary>
         SpriteBatch spriteBatch;
+        /// <summary>
+        /// The engine
+        /// </summary>
         OrionX Engine;
 
+        /// <summary>
+        /// The time
+        /// </summary>
         public float time;
+        /// <summary>
+        /// The test
+        /// </summary>
         public int test = 1;
 
+        /// <summary>
+        /// Allocs the console.
+        /// </summary>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         [DllImport("kernel32")]
 
         static extern bool AllocConsole();
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Game1"/> class.
+        /// </summary>
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -66,7 +89,7 @@ namespace OrionX.Tests
 
         }
 
-
+        PlayerIndex Index;
         /// <summary>
         /// Allows the game to run logic such as updating the world,
         /// checking for collisions, gathering input, and playing audio.
@@ -78,6 +101,10 @@ namespace OrionX.Tests
                 Exit();
 
             time = Engine.Math.Time.Delta(gameTime);
+            if (GamePadInput.ButtonPressed(Buttons.A, Index))
+            {
+                Debug.WriteLine("A BUTTON IS DOWN");
+            }
 
             base.Update(gameTime);
         }

@@ -17,6 +17,9 @@ using OrionX.Math.Time;
 
 namespace OrionX.Math
 {
+    /// <summary>
+    /// Class Math.
+    /// </summary>
     public class Math
     {
         #region Fields Region

@@ -14,6 +14,9 @@ using System.Xml.Linq;
 
 namespace OrionX.Data.Linq.XML.Read
 {
+    /// <summary>
+    /// Class Reader.
+    /// </summary>
     public class Reader
     {
         //TODO: More XML helper methods

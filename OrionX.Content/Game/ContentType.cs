@@ -1,7 +1,7 @@
 ﻿// OrionX.Content Disclaimer
 // ------------------------------------------------------
-// OrionX.Content is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX.Content is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
@@ -13,6 +13,9 @@ using OrionX.Content.Game.File;
 
 namespace OrionX.Content.Game
 {
+    /// <summary>
+    /// Class ContentType.
+    /// </summary>
     public class ContentType
     {
 
@@ -148,7 +151,7 @@ namespace OrionX.Content.Game
         #region Constructor Region
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ContentType"/> class.
+        /// Initializes a new instance of the <see cref="ContentType" /> class.
         /// </summary>
         public ContentType()
         {

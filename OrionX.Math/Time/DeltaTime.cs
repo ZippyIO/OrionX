@@ -1,7 +1,7 @@
 ﻿// OrionX Disclaimer
 // ------------------------------------------------------
-// OrionX is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 //  
 // * User: ZippyBling
@@ -13,17 +13,21 @@ using Microsoft.Xna.Framework;
 
 namespace OrionX.Math.Time
 {
+    /// <summary>
+    /// Class DeltaTime.
+    /// </summary>
     public class DeltaTime
     {
         /// <summary>
-        /// Syncs frame based operations with time to avoid speed differences with framerates
+        /// Syncs frame based operations with time to avoid speed differences with frame rates
         /// </summary>
         /// <param name="gameTime">The game time.</param>
-        /// <returns></returns>
+        /// <returns>System.Single.</returns>
         public float Delta(GameTime gameTime)
         {
             var delta = (float)gameTime.ElapsedGameTime.TotalSeconds;
             return delta;
+            // time = Engine.Math.Time.Delta(gameTime);
         }
     }
 }

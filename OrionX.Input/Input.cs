@@ -1,7 +1,7 @@
 ﻿// OrionX Disclaimer
 // ------------------------------------------------------
-// OrionX is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
@@ -21,33 +21,103 @@ using OrionX.Input.Keyboard;
 
 namespace OrionX.Input
 {
+    /// <summary>
+    /// Class Input.
+    /// </summary>
     public class Input
     {
+        #region Fields
+
+        /// <summary>
+        /// The keyboard
+        /// </summary>
         public KeyboardInput Keyboard;
+        /// <summary>
+        /// The game pad
+        /// </summary>
         public GamePadInput GamePad;
+        /// <summary>
+        /// The schema
+        /// </summary>
         public KeyboardSchema Schema;
 
-        public void Initalize()
+        #endregion
+
+        #region Variables & Properties
+
+
+
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Input"/> class.
+        /// </summary>
+        public Input()
+        {
+
+        }
+
+        #endregion
+
+        #region XNA Methods
+
+        /// <summary>
+        /// Allows the game to perform any initialization it needs to before starting to run.
+        /// This is where it can query for any required services and load any non-graphic
+        /// related content.  Calling base.Initialize will enumerate through any components
+        /// and initialize them as well.
+        /// </summary>
+        public void Initialize()
         {
             Keyboard = new KeyboardInput();
             GamePad = new GamePadInput();
             Schema = new KeyboardSchema();
         }
 
+        /// <summary>
+        /// LoadContent will be called once per game and is the place to load
+        /// all of your content.
+        /// </summary>
         public void Load(ContentManager Content)
         {
-            
+
         }
 
+        /// <summary>
+        /// UnloadContent will be called once per game and is the place to unload
+        /// game-specific content.
+        /// </summary>
+        public void Unload()
+        {
 
+        }
+
+        /// <summary>
+        /// Allows the game to run logic such as updating the world,
+        /// checking for collisions, gathering input, and playing audio.
+        /// </summary>
+        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         public void Update(GameTime gameTime)
         {
-            
+
         }
 
+        /// <summary>
+        /// This is called when the game should draw itself.
+        /// </summary>
         public void Draw(SpriteBatch sb)
         {
-            
+
         }
+
+        #endregion
+
+        #region Methods
+
+
+
+        #endregion
     }
 }

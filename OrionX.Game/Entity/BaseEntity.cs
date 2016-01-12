@@ -3,26 +3,23 @@
 // OrionX is licensed under GNU GPL 3.0.
 // Please read the license file for more information.
 // ------------------------------------------------------
-// 
+//  
 // * User: ZippyBling
-// * File: API.cs
-// * Date: 28/12/2015
-// * Time: 4:06 PM
+// * File: BaseEntity.cs
+// * Date: 07/01/2016
+// * Time: 1:57 PM
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace OrionX.API
+namespace OrionX.Game.Entity
 {
     /// <summary>
-    /// Class API.
+    /// Class BaseEntity.
     /// </summary>
-    public class API
+    public abstract class BaseEntity
     {
         #region Fields
 
@@ -39,9 +36,9 @@ namespace OrionX.API
         #region Constructor
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="API"/> class.
+        /// Initializes a new instance of the <see cref="BaseEntity"/> class.
         /// </summary>
-        public API()
+        public BaseEntity()
         {
 
         }

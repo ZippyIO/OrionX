@@ -1,7 +1,7 @@
 ﻿// OrionX.Game Disclaimer
 // ------------------------------------------------------
-// OrionX.Game is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX.Game is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
@@ -13,6 +13,9 @@ using Microsoft.Xna.Framework;
 
 namespace OrionX.Game.Util
 {
+    /// <summary>
+    /// Class GameServices.
+    /// </summary>
     public class GameServices
     {
         #region Variables and Properties
@@ -26,9 +29,7 @@ namespace OrionX.Game.Util
         /// <summary>
         /// Gets the GameServiceContainer instance.
         /// </summary>
-        /// <value>
-        /// The instance.
-        /// </value>
+        /// <value>The instance.</value>
         public static GameServiceContainer Instance
         {
             get
@@ -52,7 +53,7 @@ namespace OrionX.Game.Util
         /// Gets the service.
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <returns></returns>
+        /// <returns>T.</returns>
         public static T GetService<T>()
         {
             return (T)Instance.GetService(typeof(T));

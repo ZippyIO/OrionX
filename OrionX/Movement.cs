@@ -13,22 +13,21 @@ using Microsoft.Xna.Framework;
 
 namespace OrionX
 {
+    /// <summary>
+    /// Class Movement.
+    /// </summary>
     public abstract class Movement
     {
         /// <summary>
         /// Gets or sets the position.
         /// </summary>
-        /// <value>
-        /// The position.
-        /// </value>
+        /// <value>The position.</value>
         public Vector2 Position { get; set; }
 
         /// <summary>
         /// Gets or sets the previous position.
         /// </summary>
-        /// <value>
-        /// The previous position.
-        /// </value>
+        /// <value>The previous position.</value>
         public Vector2 PrevPosition
         {
             get { return Position; }
@@ -38,17 +37,13 @@ namespace OrionX
         /// <summary>
         /// Gets or sets the velocity.
         /// </summary>
-        /// <value>
-        /// The velocity.
-        /// </value>
+        /// <value>The velocity.</value>
         public float Velocity { get; set; }
 
         /// <summary>
         /// Gets or sets the rotation.
         /// </summary>
-        /// <value>
-        /// The rotation.
-        /// </value>
+        /// <value>The rotation.</value>
         public float Rotation { get; set; }
     }
 }

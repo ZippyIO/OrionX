@@ -1,7 +1,7 @@
 ﻿// OrionX Disclaimer
 // ------------------------------------------------------
-// OrionX is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 //  
 // * User: ZippyBling
@@ -16,9 +16,21 @@ namespace OrionX.Input.Enumeration
     /// </summary>
     public enum SchemaWASD
     {
+        /// <summary>
+        /// The w
+        /// </summary>
         W,
+        /// <summary>
+        /// The s
+        /// </summary>
         S,
+        /// <summary>
+        /// a
+        /// </summary>
         A,
+        /// <summary>
+        /// The d
+        /// </summary>
         D,
     }
 
@@ -27,9 +39,21 @@ namespace OrionX.Input.Enumeration
     /// </summary>
     public enum SchemaArrow
     {
+        /// <summary>
+        /// Up
+        /// </summary>
         Up,
+        /// <summary>
+        /// Down
+        /// </summary>
         Down,
+        /// <summary>
+        /// The left
+        /// </summary>
         Left,
+        /// <summary>
+        /// The right
+        /// </summary>
         Right,
     }
 
@@ -38,7 +62,13 @@ namespace OrionX.Input.Enumeration
     /// </summary>
     public enum SchemaList
     {
+        /// <summary>
+        /// The wasd
+        /// </summary>
         WASD,
+        /// <summary>
+        /// The arrows
+        /// </summary>
         Arrows,
     }
 }

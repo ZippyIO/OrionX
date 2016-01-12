@@ -1,7 +1,7 @@
 ﻿// OrionX Disclaimer
 // ------------------------------------------------------
-// OrionX is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
@@ -13,12 +13,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace OrionX
 {
+    /// <summary>
+    /// Class OrionX.
+    /// </summary>
     public class OrionX
     {
-        #region Fields Region
+        #region Fields
 
         /// <summary>
         /// API Class
@@ -72,12 +78,33 @@ namespace OrionX
 
         #endregion
 
-        #region Methods Region
+        #region Variables & Properties
+
+
+
+        #endregion
+
+        #region Constructor
 
         /// <summary>
-        /// Initalizes this instance.
+        /// Initializes a new instance of the <see cref="OrionX"/> class.
         /// </summary>
-        public void Initalize()
+        public OrionX()
+        {
+
+        }
+
+        #endregion
+
+        #region XNA Methods
+
+        /// <summary>
+        /// Allows the game to perform any initialization it needs to before starting to run.
+        /// This is where it can query for any required services and load any non-graphic
+        /// related content.  Calling base.Initialize will enumerate through any components
+        /// and initialize them as well.
+        /// </summary>
+        public void Initialize()
         {
             API = new API.API();
             Audio = new Audio.Audio();
@@ -90,8 +117,95 @@ namespace OrionX
             Network = new Network.Network();
             Physics = new Physics.Physics();
 
-            Math.Initalize();
+            API.Initialize();
+            Audio.Initialize();
+            Content.Initialize();
+            Data.Initialize();
+            Game.Initialize();
+            Input.Initialize();
+            Library.Initialize();
+            Math.Initialize();
+            Network.Initialize();
+            Physics.Initialize();
         }
+
+        /// <summary>
+        /// LoadContent will be called once per game and is the place to load
+        /// all of your content.
+        /// </summary>
+        public void Load(ContentManager Content)
+        {
+            API.Load(Content);
+            Audio.Load(Content);
+            this.Content.Load(Content);
+            Data.Load(Content);
+            Game.Load(Content);
+            Input.Load(Content);
+            Library.Load(Content);
+            Math.Load(Content);
+            Network.Load(Content);
+            Physics.Load(Content);
+        }
+
+        /// <summary>
+        /// UnloadContent will be called once per game and is the place to unload
+        /// game-specific content.
+        /// </summary>
+        public void Unload()
+        {
+            API.Unload();
+            Audio.Unload();
+            Content.Unload();
+            Data.Unload();
+            Game.Unload();
+            Input.Unload();
+            Library.Unload();
+            Math.Unload();
+            Network.Unload();
+            Physics.Unload();
+        }
+
+        /// <summary>
+        /// Allows the game to run logic such as updating the world,
+        /// checking for collisions, gathering input, and playing audio.
+        /// </summary>
+        /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        public void Update(GameTime gameTime)
+        {
+            API.Update(gameTime);
+            Audio.Update(gameTime);
+            Content.Update(gameTime);
+            Data.Update(gameTime);
+            Game.Update(gameTime);
+            Input.Update(gameTime);
+            Library.Update(gameTime);
+            Math.Update(gameTime);
+            Network.Update(gameTime);
+            Physics.Update(gameTime);
+        }
+
+        /// <summary>
+        /// This is called when the game should draw itself.
+        /// </summary>
+        public void Draw(SpriteBatch sb)
+        {
+            API.Draw(sb);
+            Audio.Draw(sb);
+            Content.Draw(sb);
+            Data.Draw(sb);
+            Game.Draw(sb);
+            Input.Draw(sb);
+            Library.Draw(sb);
+            Math.Draw(sb);
+            Network.Draw(sb);
+            Physics.Draw(sb);
+        }
+
+        #endregion
+
+        #region Methods
+
+
 
         #endregion
     }

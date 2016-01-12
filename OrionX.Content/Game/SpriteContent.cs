@@ -1,7 +1,7 @@
 ﻿// OrionX.Content Disclaimer
 // ------------------------------------------------------
-// OrionX.Content is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX.Content is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
@@ -10,6 +10,9 @@
 // * Time: 5:27 PM
 namespace OrionX.Content.Game
 {
+    /// <summary>
+    /// Class SpriteContent.
+    /// </summary>
     public class SpriteContent
     {
         /// <summary>
@@ -17,7 +20,7 @@ namespace OrionX.Content.Game
         /// </summary>
         /// <param name="location">The location.</param>
         /// <param name="filename">The filename.</param>
-        /// <returns></returns>
+        /// <returns>System.String.</returns>
         public string ContentLocation(string location, string filename)
         {
             var content = location + filename;

@@ -1,7 +1,7 @@
 ﻿// OrionX.Audio Disclaimer
 // ------------------------------------------------------
-// OrionX.Audio is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX.Audio is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
@@ -10,12 +10,15 @@
 // * Time: 2:48 PM
 namespace OrionX.Audio.Sound
 {
+    /// <summary>
+    /// Class SoundFX. This class cannot be inherited.
+    /// </summary>
     public sealed class SoundFX : BaseAudio
     {
         #region Constructor Region
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="SoundFX"/> class.
+        /// Initializes a new instance of the <see cref="SoundFX" /> class.
         /// </summary>
         public SoundFX()
         {

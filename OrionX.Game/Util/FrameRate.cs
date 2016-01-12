@@ -1,7 +1,7 @@
 ﻿// OrionX.Game Disclaimer
 // ------------------------------------------------------
-// OrionX.Game is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX.Game is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
@@ -14,6 +14,9 @@ using System.Linq;
 
 namespace OrionX.Game.Util
 {
+    /// <summary>
+    /// Class FrameRate.
+    /// </summary>
     public class FrameRate
     {
         #region Variables and Properties
@@ -21,33 +24,25 @@ namespace OrionX.Game.Util
         /// <summary>
         /// Gets the total frames.
         /// </summary>
-        /// <value>
-        /// The total frames.
-        /// </value>
+        /// <value>The total frames.</value>
         public long TotalFrames { get; private set; }
 
         /// <summary>
         /// Gets the total seconds.
         /// </summary>
-        /// <value>
-        /// The total seconds.
-        /// </value>
+        /// <value>The total seconds.</value>
         public float TotalSeconds { get; private set; }
 
         /// <summary>
         /// Gets the average frames per second.
         /// </summary>
-        /// <value>
-        /// The average frames per second.
-        /// </value>
+        /// <value>The average frames per second.</value>
         public float AverageFramesPerSecond { get; private set; }
 
         /// <summary>
         /// Gets the current frames per second.
         /// </summary>
-        /// <value>
-        /// The current frames per second.
-        /// </value>
+        /// <value>The current frames per second.</value>
         public float CurrentFramesPerSecond { get; private set; }
 
         /// <summary>
@@ -65,7 +60,7 @@ namespace OrionX.Game.Util
         #region Constructor Region
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FrameRate"/> class.
+        /// Initializes a new instance of the <see cref="FrameRate" /> class.
         /// </summary>
         public FrameRate()
         {
@@ -80,7 +75,7 @@ namespace OrionX.Game.Util
         /// Updates the specified delta time.
         /// </summary>
         /// <param name="deltaTime">The delta time.</param>
-        /// <returns></returns>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         public bool Update(float deltaTime)
         {
             CurrentFramesPerSecond = 1.0f / deltaTime;

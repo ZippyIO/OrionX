@@ -1,7 +1,7 @@
 ﻿// OrionX.Data Disclaimer
 // ------------------------------------------------------
-// OrionX.Data is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX.Data is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
@@ -15,6 +15,9 @@ using OrionX.Data.Linq.XML.Read;
 
 namespace OrionX.Data.Linq.XML.Load
 {
+    /// <summary>
+    /// Class Loader.
+    /// </summary>
     public class Loader
     {
         /// <summary>

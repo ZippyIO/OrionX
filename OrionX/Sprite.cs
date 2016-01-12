@@ -14,30 +14,27 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace OrionX
 {
+    /// <summary>
+    /// Class Sprite.
+    /// </summary>
     public abstract class Sprite : Movement
     {
         /// <summary>
         /// Gets or sets the texture.
         /// </summary>
-        /// <value>
-        /// The texture.
-        /// </value>
+        /// <value>The texture.</value>
         public Texture2D Texture { get; set; }
 
         /// <summary>
         /// Gets or sets the sprite location.
         /// </summary>
-        /// <value>
-        /// The sprite location.
-        /// </value>
+        /// <value>The sprite location.</value>
         public Rectangle SpriteLocation { get; set; }
 
         /// <summary>
         /// Gets or sets the content location.
         /// </summary>
-        /// <value>
-        /// The content location.
-        /// </value>
+        /// <value>The content location.</value>
         public string ContentLocation { get; set; }
     }
 }

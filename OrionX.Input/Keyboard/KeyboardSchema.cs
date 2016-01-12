@@ -1,7 +1,7 @@
 ﻿// OrionX Disclaimer
 // ------------------------------------------------------
-// OrionX is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 //  
 // * User: ZippyBling
@@ -14,6 +14,9 @@ using OrionX.Input.Enumeration;
 
 namespace OrionX.Input.Keyboard
 {
+    /// <summary>
+    /// Class KeyboardSchema.
+    /// </summary>
     public class KeyboardSchema
     {
         #region Fields Region
@@ -37,6 +40,9 @@ namespace OrionX.Input.Keyboard
 
         #region Constructor Region
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="KeyboardSchema"/> class.
+        /// </summary>
         public KeyboardSchema()
         {
 
@@ -80,6 +86,9 @@ namespace OrionX.Input.Keyboard
 
         #region XNA Methods
 
+        /// <summary>
+        /// Initalizes this instance.
+        /// </summary>
         public void Initalize()
         {
 

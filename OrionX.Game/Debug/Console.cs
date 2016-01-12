@@ -3,27 +3,25 @@
 // OrionX is licensed under GNU GPL 3.0.
 // Please read the license file for more information.
 // ------------------------------------------------------
-// 
+//  
 // * User: ZippyBling
-// * File: API.cs
-// * Date: 28/12/2015
-// * Time: 4:06 PM
+// * File: Console.cs
+// * Date: 12/01/2016
+// * Time: 1:47 PM
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace OrionX.API
+namespace OrionX.Game.Debug
 {
     /// <summary>
-    /// Class API.
+    /// Console Debugging Class
     /// </summary>
-    public class API
+    public class Console
     {
+
+
         #region Fields
 
 
@@ -39,9 +37,9 @@ namespace OrionX.API
         #region Constructor
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="API"/> class.
+        /// Initializes a new instance of the <see cref="Console"/> class.
         /// </summary>
-        public API()
+        public Console()
         {
 
         }
@@ -101,7 +99,45 @@ namespace OrionX.API
 
         #region Methods
 
+        /// <summary>
+        /// Writes the parsed string to the Console & Debug Console
+        /// </summary>
+        /// <param name="x">String to Write</param>
+        public void Write(string x)
+        {
+            System.Console.WriteLine(x.ToString());
+            System.Diagnostics.Debug.WriteLine(x.ToString());
+        }
 
+        /// <summary>
+        /// Writes the parsed int to the Console & Debug Console
+        /// </summary>
+        /// <param name="x">Intger to Write</param>
+        public void Write(int x)
+        {
+            System.Console.WriteLine(x.ToString());
+            System.Diagnostics.Debug.WriteLine(x.ToString());
+        }
+
+        /// <summary>
+        /// Writes the parsed float to the Console & Debug Console
+        /// </summary>
+        /// <param name="x">Float to Write</param>
+        public void Write(float x)
+        {
+            System.Console.WriteLine(x.ToString());
+            System.Diagnostics.Debug.Write(x.ToString());
+        }
+
+        /// <summary>
+        /// Writes the parsed bool to the Console & Debug Console
+        /// </summary>
+        /// <param name="x">Boolean to Write</param>
+        public void Write(bool x)
+        {
+            System.Console.WriteLine(x.ToString());
+            System.Diagnostics.Debug.WriteLine(x.ToString());
+        }
 
         #endregion
     }

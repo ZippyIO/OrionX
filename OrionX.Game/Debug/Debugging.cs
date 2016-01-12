@@ -3,30 +3,29 @@
 // OrionX is licensed under GNU GPL 3.0.
 // Please read the license file for more information.
 // ------------------------------------------------------
-// 
+//  
 // * User: ZippyBling
-// * File: API.cs
-// * Date: 28/12/2015
-// * Time: 4:06 PM
+// * File: Debugging.cs
+// * Date: 12/01/2016
+// * Time: 1:45 PM
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace OrionX.API
+namespace OrionX.Game.Debug
 {
     /// <summary>
-    /// Class API.
+    /// Base Debugging Class
     /// </summary>
-    public class API
+    public class Debugging
     {
         #region Fields
 
-
+        /// <summary>
+        /// Console Debugging
+        /// </summary>
+        public Console Console;
 
         #endregion
 
@@ -39,9 +38,9 @@ namespace OrionX.API
         #region Constructor
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="API"/> class.
+        /// Initializes a new instance of the <see cref="Debugging"/> class.
         /// </summary>
-        public API()
+        public Debugging()
         {
 
         }
@@ -58,7 +57,7 @@ namespace OrionX.API
         /// </summary>
         public void Initialize()
         {
-
+            Console = new Console();
         }
 
         /// <summary>

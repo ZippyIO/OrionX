@@ -1,7 +1,7 @@
 ﻿// OrionX.Data Disclaimer
 // ------------------------------------------------------
-// OrionX.Data is licenced under GNU GPL 3.0.
-// Please read the licence file for more information.
+// OrionX.Data is licensed under GNU GPL 3.0.
+// Please read the license file for more information.
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
@@ -14,6 +14,9 @@ using OrionX.Data.Linq.XML.Read;
 
 namespace OrionX.Data.Linq.XML
 {
+    /// <summary>
+    /// Class XML.
+    /// </summary>
     public class XML
     {
         #region Fields & Variables

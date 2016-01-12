@@ -1,7 +1,7 @@
 ﻿// OrionX Disclaimer
 // ------------------------------------------------------
-// OrionX is licensed under GNU GPL 3.0.
-// Please read the license file for more information.
+// OrionX is licenced under GNU GPL 3.0.
+// Please read the licence file for more information.
 // ------------------------------------------------------
 // 
 // * User: ZippyBling
@@ -25,8 +25,6 @@ namespace OrionX.Audio
     /// </summary>
     public class Audio
     {
-        #region Fields
-
         /// <summary>
         /// The sound fx
         /// </summary>
@@ -36,81 +34,40 @@ namespace OrionX.Audio
         /// </summary>
         public Music Music;
 
-        #endregion
-
-        #region Variables & Properties
-
-
-
-        #endregion
-
-        #region Constructor
-
         /// <summary>
-        /// Initializes a new instance of the <see cref="Audio"/> class.
+        /// Initalizes this instance.
         /// </summary>
-        public Audio()
+        public void Initalize()
         {
-
-        }
-
-        #endregion
-
-        #region XNA Methods
-
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
-        public void Initialize()
-        {
-
+        //    SoundFX = new SoundFX();
+          //  Music = new Music();
         }
 
         /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
+        /// Loads the specified content.
         /// </summary>
+        /// <param name="Content">The content.</param>
         public void Load(ContentManager Content)
         {
-
+            
         }
 
         /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// game-specific content.
+        /// Updates the specified game time.
         /// </summary>
-        public void Unload()
-        {
-
-        }
-
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        /// <param name="gameTime">The game time.</param>
         public void Update(GameTime gameTime)
         {
-
+            
         }
 
         /// <summary>
-        /// This is called when the game should draw itself.
+        /// Draws the specified sb.
         /// </summary>
+        /// <param name="sb">The sb.</param>
         public void Draw(SpriteBatch sb)
         {
-
+            
         }
-
-        #endregion
-
-        #region Methods
-
-
-
-        #endregion
     }
 }

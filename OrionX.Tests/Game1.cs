@@ -11,16 +11,13 @@ using OrionX.Input.Keyboard;
 
 namespace OrionX.Tests
 {
-    #region Game Class
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
-        #region Fields
-
         /// <summary>
-        /// The graphics  
+        /// The graphics
         /// </summary>
         GraphicsDeviceManager graphics;
         /// <summary>
@@ -32,10 +29,6 @@ namespace OrionX.Tests
         /// </summary>
         OrionX Engine;
 
-        #endregion
-
-        #region Variables & Properties
-
         /// <summary>
         /// The time
         /// </summary>
@@ -45,10 +38,6 @@ namespace OrionX.Tests
         /// </summary>
         public int test = 1;
 
-        #endregion
-
-        #region AllocConsole
-
         /// <summary>
         /// Allocs the console.
         /// </summary>
@@ -56,10 +45,6 @@ namespace OrionX.Tests
         [DllImport("kernel32")]
 
         static extern bool AllocConsole();
-
-        #endregion
-
-        #region Constructor
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Game1"/> class.
@@ -72,10 +57,6 @@ namespace OrionX.Tests
             IsMouseVisible = true;
         }
 
-        #endregion
-
-        #region XNA Methods
-
         /// <summary>
         /// Allows the game to perform any initialization it needs to before starting to run.
         /// This is where it can query for any required services and load any non-graphic
@@ -85,8 +66,7 @@ namespace OrionX.Tests
         protected override void Initialize()
         {
             Engine = new OrionX();
-            Engine.Initialize();
-
+            Engine.Initalize();
             base.Initialize();
         }
 
@@ -98,8 +78,6 @@ namespace OrionX.Tests
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            Engine.Load(Content);
         }
 
         /// <summary>
@@ -108,9 +86,10 @@ namespace OrionX.Tests
         /// </summary>
         protected override void UnloadContent()
         {
-            Engine.Unload();
+
         }
 
+        PlayerIndex Index;
         /// <summary>
         /// Allows the game to run logic such as updating the world,
         /// checking for collisions, gathering input, and playing audio.
@@ -118,7 +97,14 @@ namespace OrionX.Tests
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            Engine.Update(gameTime);
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+                Exit();
+
+            time = Engine.Math.Time.Delta(gameTime);
+            if (GamePadInput.ButtonPressed(Buttons.A, Index))
+            {
+                Debug.WriteLine("A BUTTON IS DOWN");
+            }
 
             base.Update(gameTime);
         }
@@ -131,18 +117,12 @@ namespace OrionX.Tests
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            Engine.Draw(spriteBatch);
-
             base.Draw(gameTime);
         }
-
-        #endregion
     }
-    #endregion
 
-    #region Program Class
     /// <summary>
-    /// The Program Class
+    /// The main class.
     /// </summary>
     public static class Program
     {
@@ -156,5 +136,4 @@ namespace OrionX.Tests
                 game.Run();
         }
     }
-    #endregion
 }

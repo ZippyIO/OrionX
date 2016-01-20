@@ -1,2 +1,5 @@
 bin/
 obj/
+.hg/
+.hgignore
+.vs/

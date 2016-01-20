@@ -1,28 +1,21 @@
 ﻿// OrionX Disclaimer
 // ------------------------------------------------------
-// OrionX is licensed under GNU GPL 3.0.
-// Please read the license file for more information.
+// OrionX is licenced under GNU GPL 3.0.
+// Please read the licence file for more information.
 // ------------------------------------------------------
-// 
+//  
 // * User: ZippyBling
-// * File: Physics.cs
-// * Date: 28/12/2015
-// * Time: 4:04 PM
+// * File: ya.cs
+// * Date: 17/01/2016
+// * Time: 6:38 PM
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace OrionX.Physics
+namespace OrionX.Audio
 {
-    /// <summary>
-    /// Class Physics.
-    /// </summary>
-    public class Physics
+    public class ya
     {
         #region Fields
 
@@ -39,9 +32,9 @@ namespace OrionX.Physics
         #region Constructor
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Physics"/> class.
+        /// Initializes a new instance of the <see cref="ya"/> class.
         /// </summary>
-        public Physics()
+        public ya()
         {
 
         }
@@ -103,6 +96,6 @@ namespace OrionX.Physics
 
 
 
-        #endregion
+        #endregion 
     }
 }

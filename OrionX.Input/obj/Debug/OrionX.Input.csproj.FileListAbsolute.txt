@@ -41,3 +41,4 @@ C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Input\bin\Debug\
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Input\obj\Debug\OrionX.Input.csprojResolveAssemblyReference.cache
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Input\obj\Debug\OrionX.Input.dll
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Input\obj\Debug\OrionX.Input.pdb
+C:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Input\bin\Debug\comments.XML

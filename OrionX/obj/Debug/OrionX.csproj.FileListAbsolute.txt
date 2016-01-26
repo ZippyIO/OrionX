@@ -81,3 +81,4 @@ C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX\bin\Debug\SharpD
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX\obj\Debug\OrionX.csprojResolveAssemblyReference.cache
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX\obj\Debug\OrionX.dll
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX\obj\Debug\OrionX.pdb
+C:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX\bin\Debug\comments.XML

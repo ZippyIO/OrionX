@@ -68,6 +68,9 @@
     <Compile Include="Debug\Console.cs" />
     <Compile Include="Debug\Debugging.cs" />
     <Compile Include="Entity\BaseEntity.cs" />
+    <Compile Include="Entity\Enumeration\EntityType.cs" />
+    <Compile Include="Entity\Enumeration\Facing.cs" />
+    <Compile Include="Entity\Enumeration\MoveType.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\FrameRate.cs" />

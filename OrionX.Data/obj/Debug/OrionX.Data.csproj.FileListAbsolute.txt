@@ -39,3 +39,4 @@ C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Data\bin\Debug\S
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Data\bin\Debug\SharpDX.MediaFoundation.xml
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Data\obj\Debug\OrionX.Data.dll
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Data\obj\Debug\OrionX.Data.pdb
+C:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Data\bin\Debug\comments.XML

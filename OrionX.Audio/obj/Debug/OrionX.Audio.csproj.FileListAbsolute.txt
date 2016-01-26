@@ -41,3 +41,4 @@ C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Audio\bin\Debug\
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Audio\obj\Debug\OrionX.Audio.csprojResolveAssemblyReference.cache
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Audio\obj\Debug\OrionX.Audio.dll
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Audio\obj\Debug\OrionX.Audio.pdb
+C:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Audio\bin\Debug\comments.XML

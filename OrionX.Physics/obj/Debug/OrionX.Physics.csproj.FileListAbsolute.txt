@@ -40,3 +40,4 @@ C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Physics\bin\Debu
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Physics\bin\Debug\SharpDX.MediaFoundation.xml
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Physics\obj\Debug\OrionX.Physics.dll
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Physics\obj\Debug\OrionX.Physics.pdb
+C:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Physics\bin\Debug\comments.XML

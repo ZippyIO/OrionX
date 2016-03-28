@@ -76,8 +76,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\BaseUI.cs" />
     <Compile Include="UI\Button.cs" />
+    <Compile Include="UI\Checkbox.cs" />
+    <Compile Include="UI\Dropdown.cs" />
     <Compile Include="UI\Enumeration\DepthType.cs" />
     <Compile Include="UI\Enumeration\UITypes.cs" />
+    <Compile Include="UI\Input.cs" />
+    <Compile Include="UI\RadioButton.cs" />
+    <Compile Include="UI\Text.cs" />
+    <Compile Include="UI\ToggleButton.cs" />
     <Compile Include="Util\FrameRate.cs" />
     <Compile Include="Util\GameServices.cs" />
     <Compile Include="Util\Settings.cs" />

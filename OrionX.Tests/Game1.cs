@@ -6,6 +6,8 @@ using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using OrionX.Audio.Sound;
+using OrionX.Game.Entity;
+using OrionX.Game.UI;
 using OrionX.Input.GamePad;
 using OrionX.Input.Keyboard;
 
@@ -58,6 +60,9 @@ namespace OrionX.Tests
         static extern bool AllocConsole();
 
         #endregion
+        bool inputRedirected = ConsoleEx.IsInputRedirected;
+
+        BaseEntity TestEntity;
 
         #region Constructor
 
@@ -68,7 +73,7 @@ namespace OrionX.Tests
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            AllocConsole();
+        //    AllocConsole();
             IsMouseVisible = true;
         }
 
@@ -87,6 +92,8 @@ namespace OrionX.Tests
             Engine = new OrionX();
             Engine.Initialize();
 
+            TestEntity = new BaseEntity();
+            
             base.Initialize();
         }
 
@@ -119,6 +126,15 @@ namespace OrionX.Tests
         protected override void Update(GameTime gameTime)
         {
             Engine.Update(gameTime);
+
+            if (KeyboardInput.KeyDown(Keys.Space))
+            {
+                TestEntity.Position += new Vector2(5, 5);
+
+                var test = TestEntity.Position.X/2;
+
+                Debug.WriteLine(test.ToString());
+            }
 
             base.Update(gameTime);
         }

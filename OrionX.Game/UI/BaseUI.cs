@@ -17,44 +17,106 @@ using Microsoft.Xna.Framework.Graphics;
 namespace OrionX.Game.UI
 {
     //TODO: Documentation
+    /// <summary>
+    /// Class BaseUI.
+    /// </summary>
     public abstract class BaseUI
     {
         #region Fields
 
+        /// <summary>
+        /// The UI Components Texture
+        /// </summary>
         private Texture2D texture;
 
+        /// <summary>
+        /// The UI Components Position
+        /// </summary>
         private Vector2 position;
 
+        /// <summary>
+        /// The UI Components Width
+        /// </summary>
         private float width;
 
+        /// <summary>
+        /// The UI Components Height
+        /// </summary>
         private float height;
+
+        /// <summary>
+        /// The texture width
+        /// </summary>
+        private float textureWidth;
+
+        /// <summary>
+        /// The texture height
+        /// </summary>
+        private float textureHeight;
 
         #endregion
 
         #region Variables & Properties
 
+        /// <summary>
+        /// Gets or sets the UI Texture.
+        /// </summary>
+        /// <value>The texture.</value>
         public Texture2D Texture
         {
             get { return texture; }
             set { texture = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the UI Position.
+        /// </summary>
+        /// <value>The position.</value>
         public Vector2 Position
         {
             get { return position; }
             set { position = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the UI Width.
+        /// </summary>
+        /// <value>The width.</value>
         public float Width
         {
             get { return width; }
             set { width = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the UI Height.
+        /// </summary>
+        /// <value>The height.</value>
         public float Height
         {
             get { return height; }
             set { height = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the width of the texture.
+        /// </summary>
+        /// <value>The width of the texture.</value>
+        public float TextureWidth
+        {
+            get { return textureWidth; }
+            set { textureWidth = value; }
+        }
+
+
+        /// <summary>
+        /// Gets or sets the height of the texture.
+        /// </summary>
+        /// <value>The height of the texture.</value>
+        public float TextureHeight
+        {
+            get { return textureHeight; }
+            set { textureHeight = value; }
         }
 
         #endregion
@@ -62,7 +124,7 @@ namespace OrionX.Game.UI
         #region Constructor
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="BaseUI"/> class.
+        /// Initializes a new instance of the <see cref="BaseUI" /> class.
         /// </summary>
         public BaseUI()
         {
@@ -88,6 +150,7 @@ namespace OrionX.Game.UI
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
         /// </summary>
+        /// <param name="Content">The content.</param>
         public void Load(ContentManager Content)
         {
 
@@ -115,6 +178,7 @@ namespace OrionX.Game.UI
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
+        /// <param name="sb">The sb.</param>
         public void Draw(SpriteBatch sb)
         {
 

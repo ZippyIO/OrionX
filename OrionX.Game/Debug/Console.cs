@@ -20,8 +20,6 @@ namespace OrionX.Game.Debug
     /// </summary>
     public class Console
     {
-
-
         #region Fields
 
 
@@ -105,7 +103,7 @@ namespace OrionX.Game.Debug
         /// <param name="x">String to Write</param>
         public void Write(string x)
         {
-            System.Console.WriteLine(x.ToString());
+            System.Diagnostics.Debug.WriteLine(x.ToString());
             System.Diagnostics.Debug.WriteLine(x.ToString());
         }
 
@@ -115,7 +113,7 @@ namespace OrionX.Game.Debug
         /// <param name="x">Intger to Write</param>
         public void Write(int x)
         {
-            System.Console.WriteLine(x.ToString());
+            System.Diagnostics.Debug.WriteLine(x.ToString());
             System.Diagnostics.Debug.WriteLine(x.ToString());
         }
 
@@ -125,7 +123,7 @@ namespace OrionX.Game.Debug
         /// <param name="x">Float to Write</param>
         public void Write(float x)
         {
-            System.Console.WriteLine(x.ToString());
+            System.Diagnostics.Debug.WriteLine(x.ToString());
             System.Diagnostics.Debug.Write(x.ToString());
         }
 
@@ -135,7 +133,7 @@ namespace OrionX.Game.Debug
         /// <param name="x">Boolean to Write</param>
         public void Write(bool x)
         {
-            System.Console.WriteLine(x.ToString());
+            System.Diagnostics.Debug.WriteLine(x.ToString());
             System.Diagnostics.Debug.WriteLine(x.ToString());
         }
 

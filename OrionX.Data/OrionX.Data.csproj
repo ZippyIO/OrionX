@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data.cs" />
+    <Compile Include="GameInfo.cs" />
     <Compile Include="Linq\XML\Load\Loader.cs" />
     <Compile Include="Linq\XML\XML.cs" />
     <Compile Include="Linq\XML\Read\Reader.cs" />

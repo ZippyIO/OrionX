@@ -1,6 +1,5 @@
 c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Content\bin\Debug\OrionX.Content.dll
 c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Content\bin\Debug\OrionX.Content.pdb
-c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Content\obj\Debug\OrionX.Content.csprojResolveAssemblyReference.cache
 c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Content\obj\Debug\OrionX.Content.dll
 c:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Content\obj\Debug\OrionX.Content.pdb
 C:\Users\Zippy\Videos\Visual Studio 2015\Projects\OrionX\OrionX.Content\bin\Debug\OrionX.Content.dll
@@ -76,3 +75,4 @@ C:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Content\bin\De
 C:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Content\bin\Debug\comments.XML\SharpDX.Direct2D1.xml
 C:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Content\bin\Debug\comments.XML\SharpDX.XInput.xml
 C:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Content\bin\Debug\comments.XML\SharpDX.MediaFoundation.xml
+C:\Users\Nick\documents\visual studio 2015\Projects\OrionX\OrionX.Content\obj\Debug\OrionX.Content.csprojResolveAssemblyReference.cache

@@ -60,7 +60,6 @@ namespace OrionX.Tests
         static extern bool AllocConsole();
 
         #endregion
-        bool inputRedirected = ConsoleEx.IsInputRedirected;
 
         BaseEntity TestEntity;
 

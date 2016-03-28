@@ -3,3 +3,5 @@ obj/
 .hg/
 .hgignore
 .vs/
+OrionX.sln.DotSettings.user
+Blocks/
